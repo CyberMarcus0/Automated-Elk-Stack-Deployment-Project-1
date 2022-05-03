@@ -30,13 +30,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-	| Name     | Function | IP Address | Operating System |
-	|----------|----------|------------|------------------|
-	| Jump Box | Gateway  |(Private)10.0.0.4(Public) 20.216.43.66  | Linux Ubuntu 18.04           |
-	| Elk-Stack     |     Elk Server     |(Private)10.1.0.4(Public)20.234.102.40    |  Linux Ubuntu 18.04   |
-	| Web-1     |    DVWA Server      | (Private) 10.0.0.5       |       Linux Ubuntu 18.04           |
-	| Web-2     |    DVWA Server      | (Private)10.0.0.10      |       Linux Ubuntu 18.04           |
-	| Web-3     | DVWA Server| (Private) 10.0.0.6| Linux Ubuntu 18.04 |
+| Name     | Function | IP Address | Operating System |
+|----------|----------|------------|------------------|
+| Jump Box | Gateway  |(Private)10.0.0.4(Public) 20.216.43.66  | Linux Ubuntu 18.04           |
+| Elk-Stack     |     Elk Server     |(Private)10.1.0.4(Public)20.234.102.40    |  Linux Ubuntu 18.04   |
+| Web-1     |    DVWA Server      | (Private) 10.0.0.5       |       Linux Ubuntu 18.04           |
+| Web-2     |    DVWA Server      | (Private)10.0.0.10      |       Linux Ubuntu 18.04           |
+| Web-3     | DVWA Server| (Private) 10.0.0.6| Linux Ubuntu 18.04 |
 
 ### Access Policies
 
@@ -50,13 +50,15 @@ Machines within the network can only be accessed by the Jumpbox VM.
 
 A summary of the access policies in place can be found in the table below.
 
-	| Name     | Publicly Accessible | Allowed IP Addresses |
-	|----------|---------------------|----------------------|
-	| Jump Box |   Yes               |   73.172.189.229     |
-	|Elk-Stack |   No                |   10.0.0.4           |
-	| Web-1    |   No                |   10.0.0.4           |
-	| Web-2    |   No                |   10.0.0.4           |
-	| Web-3    |   No                |   10.0.0.4           |
+| Name     | Publicly Accessible | Allowed IP Addresses |
+|----------|---------------------|----------------------|
+| Jump Box |   Yes               |   73.172.189.229     |
+|Elk-Stack |   No                |   10.0.0.4           |
+| Web-1    |   No                |   10.0.0.4           |
+| Web-2    |   No                |   10.0.0.4           |
+| Web-3    |   No                |   10.0.0.4           |
+
+
 ### Elk Configuration
 
 Ansible was used to automate the configuration of the ELK machine. No configuration was performed manually,  which is an advantage because it uses SSH to communicate with the remote host and run all commands (task). Using ansible, you won’t need to write custom code, you list the tasks required to be done by writing a playbook, and Ansible will get your system to the state desired. 
