@@ -103,7 +103,7 @@ SSH into the control node and follow the steps below:
 
 - Copy the configuration.yml and playbook.yml files to your /etc/ansible directory.
 - Update the configuration files to include the ELK private IP Address.
-- Run the playbook, and navigate to http://[ElkPublicIP]:5601/ to check that the installation worked as expected.
+- Run the playbook, and navigate to http://20.234.102.40:5601/ to check that the installation worked as expected.
 
 # Commands the user will need to run to download the playbook, update the files, etc._ 
 
